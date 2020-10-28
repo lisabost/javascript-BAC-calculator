@@ -16,3 +16,15 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
+@media only screen and (max-width: 64em) {
+    #alcoholhero {
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 37.5em) {
+    #alcoholhero {
+        background-image: none;
+        height: 0;
+    }
+}
