@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blood Alcohol Content Calculator</title>
+    <!-- Bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link rel="stylesheet" href="BAC-calculator.css">
+</head>
+<body>
+
+<!-- main bootstrap div -->
+<div id="alcoholhero"></div>
+<div class="container w-50">
+    <div class="row">
+        <div class="col">
+            <h1>Blood Alcohol Content Calculator</h1>
+        </div>
+    </div>
+
+    <!-- input -->
+    <fieldset>
+        <!--legend because I like this -->
+        <legend>BAC Details</legend>
+        <!-- bootstrap div for each input and labels -->
+        <div class="form-group">
+            <label for="beer">Beers Consumed</label>
+            <!-- <input> tags have class "form-control" because Bootstrap says so-->
+            <input type="number" id="beer" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="wine">Glasses of Wine Consumed</label>
+            <input type="number" id="wine" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="shots">Shots Consumed</label>
+            <input type="number" id="shots" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="weight">Your Weight (Pounds)</label>
+            <input type="number" id="weight" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="hours">Time Since First Drink (Hours)</label>
+            <input type="number" id="hours" class="form-control">
+        </div>
+
+    </fieldset>
+
+    <!-- <button> has two classes: "btn" and "btn-primary so bootstrap can make it pretty" -->
+    <button class="btn btn-primary">Calculate my BAC</button>
+
+
+<!--    Output-->
+<!--    Bootstrap stuff-->
+    <div class="row output">
+        <div class="col">
+            Your Blood Alcohol Content (BAC) is <span id="bacPercent"></span>%.
+            <br/>
+            The legal limit in Wisconsin is 0.08%
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- My javaScript code last -->
+<script src="BAC-calculator.js"></script>
+</body>
+</html>
